@@ -4,23 +4,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from './Components/Nav'
 import Foot from './Components/Foot'
+import { BrowserRouter, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div id="nav">
-
+      <BrowserRouter>
         <Nav />
-
-        <div>
-          <button className="btn btn-primary">daisyUI Button</button>
-        </div>
-
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
         <Foot />
-
-      </div>
+      </BrowserRouter>
     </>
   )
 }

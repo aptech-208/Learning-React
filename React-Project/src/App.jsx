@@ -8,6 +8,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import { Route } from 'react-router-dom'
 import { BrowserRouter, Routes } from 'react-router-dom'
+import Sender from './Props/Sender'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/props' element={<Sender />} />
         </Routes>
 
         <Foot />

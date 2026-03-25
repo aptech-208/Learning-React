@@ -9,7 +9,7 @@ const Cards = () => {
             <div className='card-container'>
 
                 {cardData.map((c) => (
-                    <div className='card'>
+                    <div className='card' key={c.id}>
                         <div className="class-banner">
                             <img src={c.imageUrl} alt={c.title} />
                         </div>

@@ -56,3 +56,25 @@
     line-height: 1.6;
     margin: 0;
 }
+
+/* Btn For Counter */
+.btn-counter {
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-counter:hover {
+    background: #2563eb;
+}
+
+/* Para For Count Paragraph */
+.Count-para {
+    font-size: 16px;
+    color: #111827;
+    margin: 0;
+}
